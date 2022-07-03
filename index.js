@@ -1,10 +1,17 @@
-/**********************************************************
-  REMOVE ALL THE COMMENTS BEFORE SUBMITTING YOUR HOMEWORK
-***********************************************************/
-
 // Imports classes for Manager, Engineer, Intern
+const Manager = require("./lib/pseudo_Manager"); // retag later
+
+const Engineer = require("./lib/pseudo_Engineer"); // retag later
+
+const Intern = require("./lib/pseudo_Intern"); // retag later
+
+
 // Imports external package 'inquirer'
+const inquirer = require("inquirer");
+
 // Imports 'path' from node library to be used to create output folder and file name
+
+
 //    Hint: __dirname, process.cwd() or you can use relative path without using 'path' library function
 // Imports 'fs' from node library
 
