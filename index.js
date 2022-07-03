@@ -1,21 +1,21 @@
-// Imports classes for Manager, Engineer, Intern
+// required
 const Manager = require("./lib/pseudo_Manager"); // retag later
 
 const Engineer = require("./lib/pseudo_Engineer"); // retag later
 
 const Intern = require("./lib/pseudo_Intern"); // retag later
 
-
-// Imports external package 'inquirer'
 const inquirer = require("inquirer");
 
-// Imports 'path' from node library to be used to create output folder and file name
+const fs = require("fs");
 
+const util = require("util");
 
-//    Hint: __dirname, process.cwd() or you can use relative path without using 'path' library function
-// Imports 'fs' from node library
+const html = require("./src/pseudo_page_template"); // retag later
 
-// Imports page template function and assign the function to a variable
+const writeFileAsync = util.promisify(fs.writeFile);
+const appendFileAsync = util.promisify(fs.appendFile);
+
 
 // Create variables for the output folder and the html file name
 
