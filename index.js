@@ -35,7 +35,43 @@ async function main() {
     console.log("index.html file created");
     console.log("----------------------------------------");
   } catch (err) {
-    return console.log(err);
+      return console.log(err);
+  }
+}
+async function prompt() {
+  let respondDone = "";
+  do {
+    try {
+      console.log("----------------------------------------");
+      let respond = await inquirer.prompt([
+        {
+          type: "input",
+          name: "name",
+          message: "Enter the name of your employee.",
+        },
+        {
+          type: "input",
+          name: "id",
+          message: "Enter your employee's ID.",
+        },
+        {
+          type: "input",
+          name: "email",
+          message: "Enter your employee's email address.",
+        },
+        {
+          type: "input",
+          name: "position",
+          message: "Enter employee's position.",
+          choices: [
+            "Engineer",
+            "Intern",
+            "Manager"
+          ]
+        }
+      ]);
+      
+    }
   }
 }
 // Create variables for the output folder and the html file name
