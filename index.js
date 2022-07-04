@@ -1,5 +1,5 @@
 // required
-const Manager = require("./lib/manager"); // proper tagging lns 2-12
+const Manager = require("./lib/manager"); // proper tagging lns 2-14
 
 const Engineer = require("./lib/engineer"); 
 
@@ -11,7 +11,7 @@ const fs = require("fs");
 
 const util = require("util");
 
-const html = require("./src/htmlTemplate"); // retag later
+const html = require("./src/htmlTemplate");
 
 const writeFileAsync = util.promisify(fs.writeFile);
 const appendFileAsync = util.promisify(fs.appendFile);
@@ -103,7 +103,7 @@ async function prompt() {
         tArray.push(intern);
         console.log(tArray)
       }
-    } while (err) {
+    } try { err => {
         return console.log(err);
     }
     respondDone = await inquirer.prompt([{
@@ -115,6 +115,7 @@ async function prompt() {
         "No"
       ]
     },]);
-  } while (respondDone.finish === "Yes");
+  } finally { respondDone.finish === "Yes";
 }
+
 main();
