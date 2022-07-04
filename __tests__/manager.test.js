@@ -1,4 +1,4 @@
-const Manager = require("../lib/manager");
+const Manager = require("../lib/manager"); // Proper tagging
 
 test("Sets office number via constructor arguments", () => {
   const testValue = 100;

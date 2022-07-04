@@ -1,4 +1,4 @@
-const Employee = require("../lib/employee");
+const Employee = require("../lib/employee"); // Proper tagging
 
 test("Instantiate Employee instance", () => {
   const e = new Employee();

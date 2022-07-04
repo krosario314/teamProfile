@@ -1,5 +1,5 @@
 // required
-const Manager = require("./lib/manager"); 
+const Manager = require("./lib/manager"); // proper tagging lns 2-12
 
 const Engineer = require("./lib/engineer"); 
 

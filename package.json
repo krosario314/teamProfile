@@ -1,11 +1,10 @@
 {
-  "name": "module10challenge",
+  "name": "team-profile-generator",
   "version": "1.0.0",
   "description": "OOP and testing for Module 10 Challenge",
   "main": "app.js",
   "directories": {
-    "lib": "lib",
-    "test": "test"
+    "lib": "lib"
   },
   "scripts": {
     "test": "jest --verbose",
@@ -19,5 +18,13 @@
   },
   "devDependencies": {
     "jest": "^28.1.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krosario314/teamProfile.git"
+  },
+  "bugs": {
+    "url": "https://github.com/krosario314/teamProfile/issues"
+  },
+  "homepage": "https://github.com/krosario314/teamProfile#readme"
 }
