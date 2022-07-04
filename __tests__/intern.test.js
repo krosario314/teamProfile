@@ -1,4 +1,4 @@
-const Intern = require("../lib/Intern"); // retag later
+const Intern = require("../lib/intern"); 
 
 test("Sets school via constructor arguments", () => {
   const testValue = "Rutgers University";

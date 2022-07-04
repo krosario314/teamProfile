@@ -1,4 +1,4 @@
-const Engineer = require("../lib/Engineer"); // retag later
+const Engineer = require("../lib/engineer"); // retag later
 
 test("Sets GitHub account via constructor arguments", () => {
   const testValue = "GitHub";

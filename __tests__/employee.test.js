@@ -1,4 +1,4 @@
-const Employee = require("../lib/Employee"); // retag later
+const Employee = require("../lib/employee");
 
 test("Instantiate Employee instance", () => {
   const e = new Employee();

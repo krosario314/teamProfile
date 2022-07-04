@@ -1,9 +1,9 @@
 // required
-const Manager = require("./lib/pseudo_Manager"); // retag later
+const Manager = require("./lib/manager"); 
 
-const Engineer = require("./lib/pseudo_Engineer"); // retag later
+const Engineer = require("./lib/engineer"); 
 
-const Intern = require("./lib/pseudo_Intern"); // retag later
+const Intern = require("./lib/intern"); 
 
 const inquirer = require("inquirer");
 
