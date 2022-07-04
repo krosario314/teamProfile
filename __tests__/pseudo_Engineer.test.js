@@ -1,20 +1,16 @@
-/**********************************************************
-  REMOVE ALL THE COMMENTS BEFORE SUBMITTING YOUR HOMEWORK
-***********************************************************/
+const Employee = require("./Employee");
 
-const Engineer = require("../lib/Engineer");
+class Engineer extends Employee {
+    constructor (name, id, email, github) {
+        super(name, id, email);
+        this.github = github;
+    }
+    getRole() {
+        return "Engineer";
+    }
+    getGithub() {
+        return this.github;
+    }
+}
 
-// test constructor to set github user
-test("", () => {
-
-});
-
-// test get role method. it should return Engineer
-test("", () => {
-
-});
-
-// test get github method. it should return github username
-test("", () => {
-  
-});
+module.exports = Engineer;
