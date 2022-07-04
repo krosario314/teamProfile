@@ -1,16 +1,19 @@
-const Employee = require("./employee.test");
+const Intern = require("../lib/Intern"); // retag later
 
-class Intern extends Employee {
-    constructor (name, id, email, school) {
-        super (name, id, email);
-        this.school = school;
-    }
-    getPosition() {
-        return "Intern";
-    }
-    getSchool() {
-        return this.school;
-    }
-}
+test("Sets school via constructor arguments", () => {
+  const testValue = "Rutgers University";
+  const e = new Intern("Smith", 1, "test@test.com", testValue);
+  expect(e.school).toBe(testValue);
+});
 
-module.exports = Intern;
+test("getPosition() should return \"Intern\"", () => {
+  const testValue = "Intern";
+  const e = new Intern("Smith", 1, "test@test.com", "Rutgers University");
+  expect(e.getRole()).toBe(testValue);
+});
+
+test("Retrieve school via getSchool()", () => {
+  const testValue = "Rutgers University";
+  const e = new Intern("Smith", 1, "test@test.com", testValue);
+  expect(e.getSchool()).toBe(testValue);
+});

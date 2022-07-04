@@ -1,16 +1,13 @@
-const Employee = require("./employee.test");
+const Engineer = require("../lib/Engineer"); // retag later
 
-class Engineer extends Employee {
-    constructor (name, id, email, github) {
-        super(name, id, email);
-        this.github = github;
-    }
-    getPosition() {
-        return "Engineer";
-    }
-    getGithub() {
-        return this.github;
-    }
-}
+test("Sets GitHub account via constructor arguments", () => {
+  const testValue = "GitHub";
+  const e = new Engineer("Smith", 1, "test@test.com", testValue);
+  expect(e.github).toBe(testValue);
+});
 
-module.exports = Engineer;
+test("getPosition() should return \"Engineer\"", () => {
+  const testValue = "Engineer";
+  const e = new Engineer("Smith", 1, "test@test.com", "GitHub");
+  expect(e.getRole()).toBe(testValue);
+});
