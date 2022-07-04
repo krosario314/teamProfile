@@ -29,7 +29,13 @@ async function main() {
     for (let i = 0; i < tArray.length; i++) {
       tString = tString + html.generateCard(tArray[i]);
     }
-    
+    let resultHtml = html.generateHTML(tString)
+    console.clear();
+    console.log("----------------------------------------");
+    console.log("index.html file created");
+    console.log("----------------------------------------");
+  } catch (err) {
+    return console.log(err);
   }
 }
 // Create variables for the output folder and the html file name
