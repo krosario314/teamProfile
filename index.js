@@ -16,7 +16,22 @@ const html = require("./src/pseudo_page_template"); // retag later
 const writeFileAsync = util.promisify(fs.writeFile);
 const appendFileAsync = util.promisify(fs.appendFile);
 
+let tArray = [];
+let tString = ``;
 
+console.clear();
+console.log("----------------------------------------");
+console.log("Team Profile Generator!")
+
+async function main() {
+  try {
+    await prompt()
+    for (let i = 0; i < tArray.length; i++) {
+      tString = tString + html.generateCard(tArray[i]);
+    }
+    
+  }
+}
 // Create variables for the output folder and the html file name
 
 // Create an empty array to store the team member objects
