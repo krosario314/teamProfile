@@ -14,7 +14,7 @@ const generateHTML = function (tString) {
   <body>
   <div class="header">
   <div class="jumbotron bg-warning">
-     <h1 class="display-4 text-white text-center">My Employee Profile!</h1>
+     <h1 class="display-4 text-white text-center">My Team Profile!</h1>
   </div>
   </div>
   <div class="container-body container-fluid">
