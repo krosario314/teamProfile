@@ -11,7 +11,7 @@ const fs = require("fs");
 
 const util = require("util");
 
-const html = require("./src/pseudo_page_template"); // retag later
+const html = require("./src/htmlTemplate"); // retag later
 
 const writeFileAsync = util.promisify(fs.writeFile);
 const appendFileAsync = util.promisify(fs.appendFile);
