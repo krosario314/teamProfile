@@ -6,8 +6,8 @@ const generateHTML = function (tString) {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Team Portfolio</title>
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://kit.fontawesome.com/04e4a42510.js/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://kit.fontawesome.com/04e4a42510.js/css/font-awesome.min.css" rel="stylesheet">
   <style>
   </style>
   </head>
@@ -44,13 +44,14 @@ const generateCard = function (arr) {
   }
 
   return `
-  <div class="col-md-4 col-sm-6 col-12 col-lg-3">
-  <div class="card shadow-lg mb-5 bg-white rounded">
-      <div class="card-header bg-primary">
+  
+<div class="col-md-4 col-sm-6 col-12 col-lg-3">
+    <div class="card shadow-lg mb-5 bg-white rounded">
+        <div class="card-header bg-primary">
           <h4 class="text-white text-center">${arr.name}</h4>
           <h4 class="text-white text-center">${arr.getPosition()}</h4>
-      </div>
-      <div class="card-body">
+        </div>
+        <div class="card-body">
           <ul class="list-unstyled">
               <li>Employee ID: ${arr.id}</li>
               <li>Email: <a href="mailto:${arr.email}">${arr.email}</a></li>
