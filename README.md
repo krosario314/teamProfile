@@ -1,8 +1,8 @@
 # Team Profile Generator
-![]()
-#
 ## List of Technology
 * Javascript
+* Bootstrap
+* Font awesome
 # 
 ## User Story
 ```
@@ -34,4 +34,4 @@ This application takes user input that includes information about their employee
 This application was made to help companies create a team employee profile generator that includes the employees name and information.
 #
 ## Resources
-* [Team Profile video]()
+* [Team Profile video](https://drive.google.com/file/d/1RRzlM5rn5VkwH-utJiNF9lNvvX5pO_uQ/view)
